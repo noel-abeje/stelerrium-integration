@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="traceTime.css">
+    <script src="traceFunc.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <input type="button" id="home" value="Home" onclick="homeDiv()" />
+      <input type="button" id="trace" value="Trace" onclick="traceDiv()" />
+      <div class="dropdown">
+        <input type="button" id="planets" value="Planets" onclick="planetDiv()" />
+        <div class="dropdown-content">
+          <a href="#">Mercury</a>
+          <a href="#">Venus</a>
+          <a href="#">Earth</a>
+          <a href="#">Mars</a>
+          <a href="#">Jupiter</a>
+          <a href="#">Saturn</a>
+          <a href="#">Uranus</a>
+          <a href="#">Neptune</a>
+        </div>
+      </div>
+    </div>
+
+    <div id="homepage" style="display: block;">
+      <h3>Trace Object Overtime</h3>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, facere! Beatae explicabo quaerat optio enim molestiae eius id, officiis vel rerum quibusdam similique exercitationem labore non unde dolore aliquam quo.</p>
+    </div>
+
+    <div id="form" style="display:none;">
+      <h3>Trace Object Overtime</h3>
+      <form method="get" action="SetPosition">
+        <input type="text" value="0" name="altitude" />
+        <button type="submit">Set Altitude</button>
+        <br>
+        <input type="text" value="0" name="azimuth" />
+        <button type="submit">Set Azimuth</button>
+        <br>
+        <input type="text" value="0" name="position" />
+        <button type="submit">Set Position</button>
+      </form>
+
+      <div class="img">
+        <h3>Recent PNG</h3>
+        <img src="http://www.google.com/images/srpr/logo3w.png" alt="Google Logo" />
+      </div>
+
+    </div>
+    <div id="planet" style="display: none;">
+      <h3 id="planetName">Planet Name</h3>
+    </div>
+  </body>
+</html>
